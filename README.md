@@ -161,16 +161,6 @@ Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist 
   - **[Tables Generator](https://tablesgenerator.com/)**: LaTeX tables generator using table data from a spreadsheet app
     - Kann neben LaTeX auch HTML, ASCII-Tabellen, Markdown und MediaWiki generieren
   - [**CubePDF** Utilities](https://www.cube-soft.jp/cubepdfutility/) \[**choco install cubepdfutility**\] ⭐: u.a. zum kostenlosen Löschen (sowie Extrahieren/Vereinigen) von Seiten aus einem PDF (bspw. zur Vorbereitung der 10Seiten-Vorabreview-Fassung), eine Funktion die aus dem Acrobat Reader ausgebaut ist und derzeit nur der Acrobat Pro Fassung vorbehalten ist
-  - HowTo PDF/X-1a? (i.e., prepress-compatible PDF)
-    - Cloud: [pdfrest](https://pdfrest.com/apitools/convert-to-pdfx/)
-    - Desktop: **[scribus](https://www.scribus.net/)** \[**choco install scribus**\]
-      - Open arbitrary PDF file in Scribus (use default option **text as vectors**)
-      - Use **File** » **Document Setup...** » **Color Management**:
-        - Select **Activate Color Management**
-        - Optional: Download, e.g., CoatedFOGRA39.icc and save it alongside the PDF! Then you can change, in the Color Management dialog, the color profiles to the alongside icc file profile, e.g., using CoatedFOGRA39 for all CMYK options (and just keep sRGB for the RGB options)
-      - Use **File** » **Export** » **Save as PDF...**:
-        - In General tab: select **PDF/X-1a** as output compatibility standard
-        - In Fonts tab: select **Outline All Fonts**
   - LaTeX to HTML: [Übersicht per **TeX-FAQ**](https://texfaq.org/FAQ-LaTeX2HTML)
     - tex4ht und [make4ht](https://github.com/michal-h21/make4ht) sind in MikTeX inkludiert: **make4ht filename.tex**
     - **[LaTeXML](https://math.nist.gov/~BMiller/LaTeXML/)** \[**choco install latexml**\]: [Getting Started](https://hackmd.io/@UoL-IWG/latexml)
@@ -346,6 +336,7 @@ Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist 
 - **[latex-beamer](https://ctan.org/pkg/beamer)**
   - Auch in [Overleaf](https://www.overleaf.com/learn/latex/Beamer) integriert
   - (Eine [OTH-Vorlage für beamer](https://www.oth-aw.de/latex/) findet sich in unserem GitLab)
+  - Nennenswert: [Adobe PDF to PPT](https://www.adobe.com/acrobat/online/pdf-to-ppt.html) (use in private tab for reset)
 - **[DirectPoll](https://www.directpoll.com/)**: Abstimmungssystem („Clicker“), also Umfragen und Votings bei Großgruppen
   - Alternativen bei Großgruppen:
     - Cloud: **[OnlineTED](https://onlineted.de/)** Basic (max. 100 Teilnehmer) | **[Tweedback](https://tweedback.de/)** Free (nur 24h Sessiondauer) | **[Mentimeter](https://www.mentimeter.com)** (max. 2 Fragen pro Präsentation) | [**vevox**.com](https://www.vevox.com/pricing/education-pricing) (Multiple-Choice-Fragen kostenlos; früher meetoo.io)
@@ -375,6 +366,7 @@ Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist 
 ## Bildmaterialien
 
 - Kostenlos/lizenzfreundlich:
+  - Emojis: **[Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet)**, **[Emoji Finder](https://emoji.muan.co/)**
   - **Concepts**/Nouns: **[Noun Project](https://thenounproject.com/)** [⭐⭐](https://www.htmlsymbols.xyz/unicode/U+2B50) (Absolutely awesome! Free of charge with attributions, but account required.)
   - **Fotos/Bilder:** **[Unsplash](https://unsplash.com/de)**, **[pixabay](https://pixabay.com/)** ⭐
     - Weitere: [Pexels](https://www.pexels.com/)
@@ -433,6 +425,29 @@ Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist 
 - Adobe **InDesign**
   - Desktop: **[Scribus](https://www.scribus.net/)** \[**choco install scribus**\]
   - Cloud: **[LucidPress](https://www.lucidpress.com/)** | **[Canva](https://www.canva.com)**
+- Adobe Acrobat Pro
+  - Desktop:
+    - PDF-Editor: **[PDF-XChange Editor](https://pdf-xchange.eu/pdf-xchange-editor/)** \[**choco install pdfxchangeeditor**\]
+    - Toolbox: **[CubePDF Utility](https://www.cube-soft.com/cubepdfutility/)** ⭐ or [PDF24 Creator](https://tools.pdf24.org/creator)
+    - PDF-Conversion to PowerPoint: only Acrobat itself, other Desktop/CLI approaches are garbage, but there are free Online alternatives below
+  - Web:
+    - PDF-Editor: [Sejda](https://www.sejda.com/pdf-editor) or [PDFescape](https://www.pdfescape.com/)
+    - Toolbox: [PDF24 Tools](https://tools.pdf24.org/), [Smallpdf](https://smallpdf.com/pdf-tools), or [pdfforge Online](https://www.pdfforge.org/online/)
+    - PDF-Conversion to PowerPoint: Adobe Online Tool **[Acrobat PDF to PPT](https://www.adobe.com/acrobat/online/pdf-to-ppt.html)** ⭐ (use in private tab for reset), (I have not tried, yet: [Smallpdf pdf-to-ppt](https://smallpdf.com/pdf-to-ppt) or [PDF24 pdf-to-powerpoint](https://tools.pdf24.org/pdf-to-powerpoint))
+- Prepress Tooling: Adobe [Preflight](https://helpx.adobe.com/acrobat/using/analyzing-documents-preflight-tool-acrobat.html), Callas [pdfToolbox](https://www.callassoftware.com/en/products/pdftoolbox/pdftoolboxdesktop)/[pdfaPilot](https://www.callassoftware.com/en/products/pdfapilot/pdfapilotdesktop) and Enfocus [PitStop Pro](https://www.enfocus.com/pitstop-pro)
+  - Desktop:
+    - In general: No open-source alternative, but a mix of [GhostScript](https://www.ghostscript.com/releases/gsdnld.html) (Win: use gswin64c.exe; i.a., ps2pdf, pdf2ps), [pdftk free](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) (concat files, add security, compress), [Xpdf](https://www.xpdfreader.com/download.html) (pdftops, pdftotext, pdftohtml, pdftoppm, pdftopng, pdfimages, pdfinfo, pdfdetach,pdftops), [poppler](https://community.chocolatey.org/packages/poppler) (i.a., pdffonts), and Apache [PDFBox](https://pdfbox.apache.org/) as well as optionally [PsUtils](https://gnuwin32.sourceforge.net/packages/psutils.htm) (i.a., psnup, psbook)
+    - PDF/X-1a: **[scribus](https://www.scribus.net/)** \[**choco install scribus**\]
+      - Open arbitrary PDF file in Scribus (use default option **text as vectors**)
+      - Use **File** » **Document Setup...** » **Color Management**:
+        - Select **Activate Color Management**
+        - Optional: Download, e.g., CoatedFOGRA39.icc and save it alongside the PDF! Then you can change, in the Color Management dialog, the color profiles to the alongside icc file profile, e.g., using CoatedFOGRA39 for all CMYK options (and just keep sRGB for the RGB options)
+      - Use **File** » **Export** » **Save as PDF...**:
+        - In General tab: select **PDF/X-1a** as output compatibility standard
+        - In Fonts tab: select **Outline All Fonts**
+  - Cloud:
+    - In general: no alternative.
+    - PDF/X-1a: **[pdfrest](https://pdfrest.com/apitools/convert-to-pdfx/)**
 - Adobe **LightRoom**
   - Desktop: **[DarkTable](https://www.darktable.org/)** \[**choco install darktable**\] | **[RawTherapee](https://www.rawtherapee.com/)** \[**choco install rawtherapee**\]
   - Cloud: **[polarr](https://photoeditor.polarr.co/)**
