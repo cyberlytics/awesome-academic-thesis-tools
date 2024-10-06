@@ -425,7 +425,7 @@ Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist 
 - Adobe **InDesign**
   - Desktop: **[Scribus](https://www.scribus.net/)** \[**choco install scribus**\]
   - Cloud: **[LucidPress](https://www.lucidpress.com/)** | **[Canva](https://www.canva.com)**
-- Adobe Acrobat Pro
+- Adobe **Acrobat** Pro
   - Desktop:
     - PDF-Editor: **[PDF-XChange Editor](https://pdf-xchange.eu/pdf-xchange-editor/)** \[**choco install pdfxchangeeditor**\]
     - Toolbox: **[CubePDF Utility](https://www.cube-soft.com/cubepdfutility/)** ⭐ or [PDF24 Creator](https://tools.pdf24.org/creator)
@@ -434,7 +434,7 @@ Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist 
     - PDF-Editor: [Sejda](https://www.sejda.com/pdf-editor) or [PDFescape](https://www.pdfescape.com/)
     - Toolbox: [PDF24 Tools](https://tools.pdf24.org/), [Smallpdf](https://smallpdf.com/pdf-tools), or [pdfforge Online](https://www.pdfforge.org/online/)
     - PDF-Conversion to PowerPoint: Adobe Online Tool **[Acrobat PDF to PPT](https://www.adobe.com/acrobat/online/pdf-to-ppt.html)** ⭐ (use in private tab for reset), (I have not tried, yet: [Smallpdf pdf-to-ppt](https://smallpdf.com/pdf-to-ppt) or [PDF24 pdf-to-powerpoint](https://tools.pdf24.org/pdf-to-powerpoint))
-- Prepress Tooling: Adobe [Preflight](https://helpx.adobe.com/acrobat/using/analyzing-documents-preflight-tool-acrobat.html), Callas [pdfToolbox](https://www.callassoftware.com/en/products/pdftoolbox/pdftoolboxdesktop)/[pdfaPilot](https://www.callassoftware.com/en/products/pdfapilot/pdfapilotdesktop) and Enfocus [PitStop Pro](https://www.enfocus.com/pitstop-pro)
+- Prepress Tooling: Adobe **[Preflight](https://helpx.adobe.com/acrobat/using/analyzing-documents-preflight-tool-acrobat.html)**, Callas **[pdfToolbox](https://www.callassoftware.com/en/products/pdftoolbox/pdftoolboxdesktop)**/[pdfaPilot](https://www.callassoftware.com/en/products/pdfapilot/pdfapilotdesktop) and Enfocus **[PitStop](https://www.enfocus.com/pitstop-pro)**
   - Desktop:
     - In general: No open-source alternative, but a mix of [GhostScript](https://www.ghostscript.com/releases/gsdnld.html) (Win: use gswin64c.exe; i.a., ps2pdf, pdf2ps), [pdftk free](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) (concat files, add security, compress), [Xpdf](https://www.xpdfreader.com/download.html) (pdftops, pdftotext, pdftohtml, pdftoppm, pdftopng, pdfimages, pdfinfo, pdfdetach,pdftops), [poppler](https://community.chocolatey.org/packages/poppler) (i.a., pdffonts), and Apache [PDFBox](https://pdfbox.apache.org/) as well as optionally [PsUtils](https://gnuwin32.sourceforge.net/packages/psutils.htm) (i.a., psnup, psbook)
     - PDF/X-1a: **[scribus](https://www.scribus.net/)** \[**choco install scribus**\]
@@ -447,7 +447,7 @@ Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist 
         - In Fonts tab: select **Outline All Fonts**
   - Cloud:
     - In general: no alternative.
-    - PDF/X-1a: **[pdfrest](https://pdfrest.com/apitools/convert-to-pdfx/)**
+    - PDF/X-1a: **[pdfrest](https://pdfrest.com/apitools/convert-to-pdfx/)** (Starter account with free contingent)
 - Adobe **LightRoom**
   - Desktop: **[DarkTable](https://www.darktable.org/)** \[**choco install darktable**\] | **[RawTherapee](https://www.rawtherapee.com/)** \[**choco install rawtherapee**\]
   - Cloud: **[polarr](https://photoeditor.polarr.co/)**
