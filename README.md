@@ -23,28 +23,29 @@ Hinweise:
 
 <!-- toc -->
 
-- [Literaturrecherche & Wissensaufbau](#literaturrecherche--wissensaufbau)
-- [Generative KI](#generative-ki)
-- [LaTeX & PDF](#latex--pdf)
-- [Schreiben](#schreiben)
-- [Anti-Prokrastination](#anti-prokrastination)
-- [Translations](#translations)
-- [Evaluation-Werkzeuge](#evaluation-werkzeuge)
-- [Management & Agile Methoden](#management--agile-methoden)
-- [Kollaborative Werkzeuge](#kollaborative-werkzeuge)
-- [Zeichnen](#zeichnen)
-- [Presentations](#presentations)
-- [Plug-Ins / Add-Ins / Extensions](#plug-ins--add-ins--extensions)
-- [Bildmaterialien](#bildmaterialien)
-- [Mathe](#mathe)
-- [Job-Bewerbungen](#job-bewerbungen)
-- [Kostenlose Alternativen](#kostenlose-alternativen)
-- [Appendix: More Free Student Stuff](#appendix-more-free-student-stuff)
-- [Footer](#footer)
-  - [Future Work](#future-work)
-  - [Contribute](#contribute)
-  - [Backers](#backers)
-  - [License](#license)
+- [Awesome Abschlussarbeit (Informatik/KI)](#awesome-abschlussarbeit-informatikki)
+  - [Literaturrecherche \& Wissensaufbau](#literaturrecherche--wissensaufbau)
+  - [Generative KI](#generative-ki)
+  - [LaTeX \& PDF](#latex--pdf)
+  - [Schreiben](#schreiben)
+  - [Anti-Prokrastination](#anti-prokrastination)
+  - [Translations](#translations)
+  - [Evaluation-Werkzeuge](#evaluation-werkzeuge)
+  - [Management \& Agile Methoden](#management--agile-methoden)
+  - [Kollaborative Werkzeuge](#kollaborative-werkzeuge)
+  - [Zeichnen](#zeichnen)
+  - [Presentations](#presentations)
+  - [Plug-Ins / Add-Ins / Extensions](#plug-ins--add-ins--extensions)
+  - [Bildmaterialien](#bildmaterialien)
+  - [Mathe](#mathe)
+  - [Job-Bewerbungen](#job-bewerbungen)
+  - [Kostenlose Alternativen](#kostenlose-alternativen)
+  - [Appendix: More Free Student Stuff](#appendix-more-free-student-stuff)
+  - [Footer](#footer)
+    - [Future Work](#future-work)
+    - [Contribute](#contribute)
+    - [Backers](#backers)
+    - [License](#license)
 
 <!-- tocstop -->
 
@@ -326,13 +327,29 @@ Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist 
 ## Presentations
 
 - **PowerPoint** (kostenlos für OTH-Studierende) oder dessen **kostenlose Desktop- oder HTML-Alternativen** (s. unten)
-  - Webseiten live in PPT-Präsentation einbinden? [PollEveryWhere](https://www.polleverywhere.com/) \[**choco install polleverywhere**\], fei echt!
+  - Webseiten live in PPT-Präsentation einbinden?
+    - Derzeit praktisch nicht mehr machbar. Es gibt nur noch [ClassPoint](https://www.classpoint.io/features/embedded-browser) als Work-Around.
+    - ([PollEveryWhere](https://www.polleverywhere.com/) hatte die LiveSlides-Funktion integriert aber hat sie derzeit wieder verloren.)
+    - ([LiveSlide](https://liveslides.software.informer.com/download/) war der Vorgänger von PollEverywhere und wurde in PollEv integriert und ist jetzt installierbar aber unbrauchbar.)
+    - (Die Powerpoint-Extension von Microsoft selbst namens [Web-Viewer](https://appsource.microsoft.com/en-us/product/office/WA104295828) war leider schon immer fast unbrauchbar.)
   - Man kann auch mittels PowerPoint selbst eine Bild-in-Bild [Video-Aufzeichnung](https://insider.office.com/de-de/blog/tell-your-story-with-video-recording-in-powerpoint) („Teleprompter“) seiner Präsentation machen
   - Dateigröße von PPT-Päsentation
     - Eingebaute [**compress pictures** Funktion](https://support.microsoft.com/de-de/office/verringern-der-dateigr%C3%B6%C3%9Fe-ihrer-powerpoint-pr%C3%A4sentationen-9548ffd4-d853-41e7-8e40-b606bca036b4) ⚠️
-    - Dateigröße tiefgehend analysieren (und manuell fixen)? (€) [slidewise](https://neuxpower.com/slidewise-powerpoint-add-in) Extension
-    - Dateigrößen automatisch fixen? (€) [NXPowerLite](https://neuxpower.com/nxpowerlite-desktop) ⭐ (für PPT, aber auch Word, Excel und PDFs)
-    - Alle drei Varianten werden aufgeführt im Webartikel [Reduce **PPT file size**](https://neuxpower.com/blog/why-is-my-powerpoint-so-big-and-how-can-i-reduce-the-size-of-the-ppt)
+    - neuxpower ⭐
+      - Dateigröße tiefgehend analysieren (und manuell fixen)? neuxpower [Slidewise](https://neuxpower.com/slidewise-powerpoint-add-in) Extension (mit einer wertvollen Free Version ⭐ und einer noch wertvolleren (€) Bezahlversion)
+      - Dateigrößen automatisch fixen? (€) neuxpower [NXPowerLite](https://neuxpower.com/nxpowerlite-desktop) ⭐ (für PPT, aber auch Word, Excel und PDFs)
+        - Obacht mit den drei vorgefertigten Profilen [Balanced/Strong/Basic](https://support.neuxpower.com/hc/en-us/articles/201046011-How-do-Optimize-profile-optimization-settings-affect-my-files): Keines passt m.E. so richtig und ich würde ein customized profile empfehlen:
+          | Option | Wert |
+          | -------- | -------- |
+          | Resize images for display at: | 1920 x 1080 (1080p) |
+          | Allow JPEG conversion  | Enabled |
+          | Remove embedded Excel data from charts (PowerPoint & Word) | Disabled |
+          | Reduce color depth of PNG images (Office) | Enabled |
+          | Maintain compatibility with Word 2007 (Word) | Disabled |
+          | JPEG Quality (JPEG) | 8 |
+          | Remove Exif Data | Enabled |
+      - Alle drei Varianten (compress pictures, Slidewise, NXPowerLite) und mehr wertvolle Hinweise werden beschrieben im Webartikel [Reduce **PPT file size**](https://neuxpower.com/blog/why-is-my-powerpoint-so-big-and-how-can-i-reduce-the-size-of-the-ppt) ⭐
+      - Kostenloser Online-Datei-Compressor von neuxpower = WeCompress: [Analyzer](https://www.wecompress.com/en/analyze) (max. 200MB) und [Compressor](https://www.wecompress.com/en/) (max. 50MB)
 - **[latex-beamer](https://ctan.org/pkg/beamer)**
   - Auch in [Overleaf](https://www.overleaf.com/learn/latex/Beamer) integriert
   - (Eine [OTH-Vorlage für beamer](https://www.oth-aw.de/latex/) findet sich in unserem GitLab)
@@ -428,15 +445,17 @@ Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist 
 - Adobe **Acrobat** Pro
   - Desktop:
     - PDF-Editor: **[PDF-XChange Editor](https://pdf-xchange.eu/pdf-xchange-editor/)** \[**choco install pdfxchangeeditor**\]
-    - Toolbox: **[CubePDF Utility](https://www.cube-soft.com/cubepdfutility/)** ⭐ or [PDF24 Creator](https://tools.pdf24.org/creator)
+    - Toolbox: **[CubePDF Utility](https://www.cube-soft.com/cubepdfutility/)** ⭐, [iLovePDF Desktop](https://www.ilovepdf.com/desktop), or [PDF24 Creator](https://tools.pdf24.org/creator)
+    - PDF-Compressor: (€) neuxpower [NXPowerLite](https://neuxpower.com/nxpowerlite-desktop) (Top!), kostenlos [iLovePDF Desktop](https://www.ilovepdf.com/desktop)
     - PDF-Conversion to PowerPoint: only Acrobat itself, other Desktop/CLI approaches are garbage, but there are free Online alternatives below
   - Web:
-    - PDF-Editor: [Sejda](https://www.sejda.com/pdf-editor) or [PDFescape](https://www.pdfescape.com/)
-    - Toolbox: [PDF24 Tools](https://tools.pdf24.org/), [Smallpdf](https://smallpdf.com/pdf-tools), or [pdfforge Online](https://www.pdfforge.org/online/)
-    - PDF-Conversion to PowerPoint: Adobe Online Tool **[Acrobat PDF to PPT](https://www.adobe.com/acrobat/online/pdf-to-ppt.html)** ⭐ (use in private tab for reset), (I have not tried, yet: [Smallpdf pdf-to-ppt](https://smallpdf.com/pdf-to-ppt) or [PDF24 pdf-to-powerpoint](https://tools.pdf24.org/pdf-to-powerpoint))
+    - PDF-Editor: [Sejda](https://www.sejda.com/pdf-editor), [iLovePDF Editor](https://www.ilovepdf.com/edit-pdf) or [PDFescape](https://www.pdfescape.com/)
+    - Toolbox: [iLovePDF](https://www.ilovepdf.com/), [PDF24 Tools](https://tools.pdf24.org/), [Smallpdf](https://smallpdf.com/pdf-tools), or [pdfforge Online](https://www.pdfforge.org/online/)
+    - PDF-Compressor: neuxpower [wecompress](https://www.wecompress.com/) (max. 50MB), [iLovePDF Compress](https://www.ilovepdf.com/compress_pdf)
+    - PDF-Conversion to PowerPoint: Adobe Online Tool **[Acrobat PDF to PPT](https://www.adobe.com/acrobat/online/pdf-to-ppt.html)** ⭐ (use in private tab for reset), (I have not tried, yet: [iLovePDF pdf-to-powerpoint](https://www.ilovepdf.com/pdf_to_powerpoint), [Smallpdf pdf-to-ppt](https://smallpdf.com/pdf-to-ppt) or [PDF24 pdf-to-powerpoint](https://tools.pdf24.org/pdf-to-powerpoint))
 - Prepress Tooling: Adobe **[Preflight](https://helpx.adobe.com/acrobat/using/analyzing-documents-preflight-tool-acrobat.html)**, Callas **[pdfToolbox](https://www.callassoftware.com/en/products/pdftoolbox/pdftoolboxdesktop)**/[pdfaPilot](https://www.callassoftware.com/en/products/pdfapilot/pdfapilotdesktop) and Enfocus **[PitStop](https://www.enfocus.com/pitstop-pro)**
   - Desktop:
-    - In general: No open-source alternative, but a mix of [GhostScript](https://www.ghostscript.com/releases/gsdnld.html) (Win: use gswin64c.exe; i.a., ps2pdf, pdf2ps), [pdftk free](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) (concat files, add security, compress), [Xpdf](https://www.xpdfreader.com/download.html) (pdftops, pdftotext, pdftohtml, pdftoppm, pdftopng, pdfimages, pdfinfo, pdfdetach,pdftops), [poppler](https://community.chocolatey.org/packages/poppler) (i.a., pdffonts), and Apache [PDFBox](https://pdfbox.apache.org/) as well as optionally [PsUtils](https://gnuwin32.sourceforge.net/packages/psutils.htm) (i.a., psnup, psbook)
+    - In general: No free alternative, but a mix of [GhostScript](https://www.ghostscript.com/releases/gsdnld.html) (Win: use gswin64c.exe; i.a., ps2pdf, pdf2ps), [pdftk free](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) (concat files, add security, compress), [Xpdf](https://www.xpdfreader.com/download.html) (pdftops, pdftotext, pdftohtml, pdftoppm, pdftopng, pdfimages, pdfinfo, pdfdetach,pdftops), [poppler](https://community.chocolatey.org/packages/poppler) (i.a., pdffonts), and Apache [PDFBox](https://pdfbox.apache.org/) as well as optionally [PsUtils](https://gnuwin32.sourceforge.net/packages/psutils.htm) (i.a., psnup, psbook)
     - PDF/X-1a: **[scribus](https://www.scribus.net/)** \[**choco install scribus**\]
       - Open arbitrary PDF file in Scribus (use default option **text as vectors**)
       - Use **File** » **Document Setup...** » **Color Management**:
@@ -446,7 +465,7 @@ Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist 
         - In General tab: select **PDF/X-1a** as output compatibility standard
         - In Fonts tab: select **Outline All Fonts**
   - Cloud:
-    - In general: no alternative.
+    - In general: No free alternative.
     - PDF/X-1a: **[pdfrest](https://pdfrest.com/apitools/convert-to-pdfx/)** (Starter account with free contingent)
 - Adobe **LightRoom**
   - Desktop: **[DarkTable](https://www.darktable.org/)** \[**choco install darktable**\] | **[RawTherapee](https://www.rawtherapee.com/)** \[**choco install rawtherapee**\]
